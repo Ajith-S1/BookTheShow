@@ -1,0 +1,14 @@
+/* body{
+    color: white;
+} */
+.CitySelector{
+    width :max-content;
+    color: white;
+    border-color: white;
+    /* background-color: white; */
+}
+
+#city-list-items{
+    width: max-content;
+    color: white;
+}

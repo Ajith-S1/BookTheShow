@@ -1,0 +1,15 @@
+.MovieDescPoster{
+    height: 25rem;
+}
+
+.BookBtn:hover , .BookBtn:active{
+    color: #F84464;
+    font-weight: bolder;
+    background-color: white;
+    background: "#F84464";
+    color: "white" ;
+    transform: scale(1.2);
+    /* transition: inherit; */
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition-delay: 10ms;
+}

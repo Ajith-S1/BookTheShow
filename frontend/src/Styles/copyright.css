@@ -1,0 +1,98 @@
+body{
+    text-align: center;
+  }
+  .play{
+    width: 9%;
+    border-left: 2cm;
+    border-radius:350%;
+    margin-top: 2%;
+    padding-right: 2%;
+  }
+  .card-img{
+    width: 71%;
+    height: 250px;
+    padding: 20px;
+  }
+  .container{
+    background-color: #282c34;
+    margin-top: 5%;
+  }
+  .para{
+    color: white;
+    display:inline-block;
+    margin-left: 2%;
+  }
+  .para1{
+    color: white;
+    margin-left: 0.5cm;
+  }
+  .card{
+    border-radius: 0;
+    margin:10px;
+    box-shadow: rgba(0,0,0,0.16)0px 1px 4px;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .name{
+    color: brown ;
+  }
+  .ICONS1 :hover{
+    color: rgb(4, 0, 255);
+  }
+  .ICONS2 :hover{
+    color: rgb(0, 132, 255);
+  }
+  .ICONS3 :hover{
+    color: rgb(255, 17, 0);
+  }
+  .ICONS4 :hover{
+    color: hsla(335, 80%, 50%, 0.884);
+      
+  }
+  .CITY{
+  
+    padding-left: 75%;
+    width: 14cm;
+  }
+  .lang
+  .C1{
+    width: 5cm;
+  }
+
+  .QuickLinks{
+    /* padding: 0 2rem; */
+    padding: 0  2.5rem;
+  }
