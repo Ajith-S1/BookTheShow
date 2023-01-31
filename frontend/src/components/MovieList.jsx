@@ -19,8 +19,8 @@ class MovieList extends Component {
     render(){
         const movies = this.props.movies;
         return(
-            <div className="Movies">
-               
+            <div className="Movies" >
+            {/* <h4 style={{margin:'2rem 0 0 3.3rem' , textAlign:'left'}}>Movies </h4>  */}
             <Box sx={{ flexGrow: 1 ,  margin: '4% 3%'}} >
                <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} 
                justifyContent="center"

@@ -38,11 +38,11 @@ export default function ShowList(props) {
                 onClick={(event) => handleListItemClick(event, show.id)}
                 
               >
-                <GetTheater id = {show.Tid} city = {city} />
+                <GetTheater id = {show.Tid} city = {city} fval = {show.Seats} fshow = {show} time = {show.StartTime} />
                 {/* <ListItemText 
                primary={<GetTheater id = {show.Tid} city = {city} />} 
                 secondary = {show.StartTime}/> */}
-                <p>{show.StartTime}</p>
+                {/* <p>{show.StartTime}</p> */}
                 {/* <Button
                 size="medium"
                 sx={{ background: "#F84464", color: "white" ,marginLeft:'10%'}}
@@ -51,7 +51,7 @@ export default function ShowList(props) {
                   
                 }}
                 >Book</Button> */}
-              <FinalPop val = {show.Seats} show  = {show}/>
+              {/* <FinalPop val = {show.Seats} show  = {show}/> */}
               </ListItemButton> ):null
             ))}
 

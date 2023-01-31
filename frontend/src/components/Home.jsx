@@ -30,7 +30,7 @@ class Home extends Component{
             <Box>
                 <Navbar/>
                 <Carousel />
-                <p>Book Movies : </p>
+                {/* <p>Book Movies : </p> */}
                 <MovieList movies = {this.state.movies}
                     resetState = {this.resetState} />
                <footer />

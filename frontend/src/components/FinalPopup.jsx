@@ -42,14 +42,15 @@ export default function BasicModal(props) {
           axios.put(API_URL + `Show/${SelectedShow.id}/`, SelectedShow).then(() => {
               console.log(API_URL + `Show/${SelectedShow.id}`)
           });
+          alert("Booking Success !");
         }
         history.push(`/`);
   }
   return (
-    <div>
+    <div >
       <Button onClick={handleOpen}
       size="medium"
-      sx={{ background: "#F84464", color: "white" ,marginLeft:'10%'}}
+      sx={{ background: "#F84464", color: "white" ,marginLeft:'10%',margin:'0 0 0 80%'}}
       className = 'BookBtn'>Book</Button>
       <Modal
         open={open}
