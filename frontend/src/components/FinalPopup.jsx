@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useContext } from "react";
 import { Form, FormGroup, Input, Label } from "reactstrap";
 import Box from '@mui/material/Box';
 import { Button } from '@mui/material';
@@ -7,6 +8,7 @@ import Modal from '@mui/material/Modal';
 import { useHistory } from 'react-router-dom';
 import axios from "axios";
 import { API_URL } from '../constants';
+import AuthContext from '../context/AuthContext';
 
 const style = {
   position: 'absolute',
@@ -20,6 +22,7 @@ const style = {
   p: 4,
 };
 
+
 export default function BasicModal(props) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -29,6 +32,16 @@ export default function BasicModal(props) {
   let no_of_seats = 0;
   const handleChange = (event) => {
     no_of_seats = event.target.value;
+  }
+
+  const { user } = useContext(AuthContext);
+
+  const bookingObj = {
+    Uid : String(user.username),
+    Tid : String(props.theater.id),
+    Mid : String(props.id),
+    Sid : String(props.show.id),
+    SeatNo : String(no_of_seats),
   }
 
   const handleSubmit = (event) => {
@@ -42,6 +55,10 @@ export default function BasicModal(props) {
           axios.put(API_URL + `Show/${SelectedShow.id}/`, SelectedShow).then(() => {
               console.log(API_URL + `Show/${SelectedShow.id}`)
           });
+          bookingObj.SeatNo = no_of_seats;
+          axios.post(API_URL + 'Booking/', bookingObj).then((response) => {
+            console.log(response)
+        });
           alert("Booking Success !");
         }
         history.push(`/`);

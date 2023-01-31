@@ -18,6 +18,7 @@ export default function ShowList(props) {
   const shows = props.shows;
   const city = props.city;
   const MovId = props.id;
+  // alert(MovId);
   return (
     <Box sx={{ width: "100%", bgcolor: "background.paper" }}>
       <List component="nav" aria-label="main mailbox folders" >
@@ -38,7 +39,7 @@ export default function ShowList(props) {
                 onClick={(event) => handleListItemClick(event, show.id)}
                 
               >
-                <GetTheater id = {show.Tid} city = {city} fval = {show.Seats} fshow = {show} time = {show.StartTime} />
+                <GetTheater id = {show.Tid} city = {city} fval = {show.Seats} fshow = {show} time = {show.StartTime} Mvid = {MovId} />
                 {/* <ListItemText 
                primary={<GetTheater id = {show.Tid} city = {city} />} 
                 secondary = {show.StartTime}/> */}

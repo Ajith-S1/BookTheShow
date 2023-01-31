@@ -52,11 +52,19 @@ class User(models.Model):
     Password = models.CharField(max_length=20)
 
 
+# class Booking(models.Model):
+#     Uid = models.EmailField()
+#     Tid = models.ForeignKey(Theater, on_delete=models.CASCADE)
+#     Mid = models.ForeignKey(Movie, on_delete=models.CASCADE)
+#     Sid = models.ForeignKey(Show, on_delete=models.CASCADE)
+#     # Stime = models.DateTimeField()
+#     SeatNo = models.IntegerField()
+
 class Booking(models.Model):
-    Uid = models.ForeignKey(User, on_delete=models.CASCADE)
-    Tid = models.ForeignKey(Theater, on_delete=models.CASCADE)
-    Mid = models.ForeignKey(Movie, on_delete=models.CASCADE)
-    Sid = models.ForeignKey(Show, on_delete=models.CASCADE)
+    Uid = models.CharField(max_length=255)
+    Tid = models.CharField(max_length=255)
+    Mid = models.CharField(max_length=255)
+    Sid = models.CharField(max_length=255)
     # Stime = models.DateTimeField()
     SeatNo = models.IntegerField()
 

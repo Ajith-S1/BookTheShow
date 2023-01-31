@@ -53,7 +53,7 @@ class Home extends Component {
                     {this.props.time}
                 </Grid>
                 <Grid item xs = {3}>
-                    <FinalPop val = {this.props.fval} show  = {this.props.fshow} />
+                    <FinalPop val = {this.props.fval} show  = {this.props.fshow} theater = {this.state.theater} id = {this.props.Mvid}/>
                 </Grid>
               </Grid>
             </Box>
