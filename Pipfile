@@ -13,3 +13,5 @@ django-rest-knox = "*"
 
 [requires]
 python_version = "3.11"
+
+# config added
